@@ -55,7 +55,7 @@ p{
     margin: 10px;
 }
 
-button{
+.close-button{
     background-color: red;
     font-weight: bold;
     color: white;
@@ -64,6 +64,8 @@ button{
     float: right;
     width: 18px;
     height: 18px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .todo{
@@ -86,7 +88,7 @@ button{
 .todo:hover p{
     color: whitesmoke;
 }
-.todo:hover button{
+.todo:hover .close-button{
     background-color: black;
 }
 
