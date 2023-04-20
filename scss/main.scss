@@ -18,10 +18,7 @@ body {
     padding: 10px;
 
     h1 {
-        display: inline;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: $title-background-color;
+        @extend %kanban-title-h1;
     }
 }
 
@@ -31,17 +28,14 @@ body {
     padding-bottom: 20px;
     .todo-list {
         background: $todo-list-background-color;
-        border-radius: 10px;
+        border-radius: $card-border-radius;
         padding: 20px 10px 10px 10px;
         margin: 10px;
         h2 {
             margin-bottom: 10px;
         }
         .todo {
-            background: $todo-background-color;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 10px;
+            @extend %todo-params;
             .close-button {
                 @extend %close-button;
                 float: right;
@@ -54,15 +48,9 @@ body {
                 margin-top: 10px;
             }
             .icons {
-                margin-top: 10px;
-                list-style: none;
-                overflow: hidden;
-                padding: 5px;
+                @extend %icons-holder;
                 li {
-                    float: left;
-                    text-align: center;
-                    vertical-align: middle;
-                    margin: 2px;
+                    @extend %icon-list-item;
                     .icon1-bg{
                         @include icon-bg;
                     }
