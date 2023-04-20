@@ -5,6 +5,20 @@
   box-sizing: border-box;
 }
 
+.kanban-title h1 {
+  display: inline;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(241, 248, 252, 0.8);
+}
+
+.column .todo-list .todo {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
 .column .todo-list .todo .close-button {
   background-color: red;
   font-weight: bold;
@@ -43,13 +57,6 @@ body {
   text-align: center;
   padding: 10px;
 }
-.kanban-title h1 {
-  display: inline;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: rgba(241, 248, 252, 0.8);
-}
-
 .column {
   float: left;
   width: 20%;
@@ -62,12 +69,6 @@ body {
   margin: 10px;
 }
 .column .todo-list h2 {
-  margin-bottom: 10px;
-}
-.column .todo-list .todo {
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 10px;
-  padding: 20px;
   margin-bottom: 10px;
 }
 .column .todo-list .todo .close-button {
@@ -97,6 +98,22 @@ body {
   width: 36px;
   height: 36px;
   background-color: yellow;
+}
+.column .todo-list .todo:hover .icon {
+  color: #17598f;
+}
+.column .todo-list .todo:hover {
+  background: rgba(23, 141, 236, 0.8);
+  cursor: pointer;
+}
+.column .todo-list .todo:hover h3 {
+  color: whitesmoke;
+}
+.column .todo-list .todo:hover p {
+  color: whitesmoke;
+}
+.column .todo-list .todo:hover button {
+  background-color: black;
 }
 
 .icon {

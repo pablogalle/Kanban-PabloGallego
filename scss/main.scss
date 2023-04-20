@@ -63,6 +63,22 @@ body {
                 }
             }
         }
+        .todo:hover .icon{
+            color: $icon-hover-color;
+        }
+        .todo:hover {
+            background: $todo-hover-background-color;
+            cursor: pointer;
+        }
+        .todo:hover h3{
+            color: $todo-text-hover-color;
+        }
+        .todo:hover p{
+            color: $todo-text-hover-color;
+        }
+        .todo:hover button{
+            background-color: $close-button-hover-color;
+        }
 
     }
 }
