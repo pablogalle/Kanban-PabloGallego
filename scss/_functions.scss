@@ -1,0 +1,27 @@
+@import "variables";
+
+%base-rules{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+%close-button {
+    background-color: $close-button-color;
+    font-weight: bold;
+    color: $close-x-color;
+    border-radius: $circle-border-radius;
+    border: 0;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin icon-bg($bg-color: green){
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: $bg-color;
+}

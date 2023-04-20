@@ -28,7 +28,6 @@ h1{
 }
 .todo-list h2{
     margin-bottom: 10px;
-    font-weight:bold;
 }
 .todo h3{
     margin-bottom: 10px;
@@ -90,14 +89,12 @@ h1{
 }
 
 .icons{
+    margin-top: 10px;
     list-style: none;
     overflow: hidden;
     padding: 5px;
 }
 
-ul{
-    margin-top: 10px;
-}
 li{
     float: left;
     text-align: center;
